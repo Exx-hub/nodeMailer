@@ -1,0 +1,23 @@
+{
+  "name": "cmdv2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "indexServer.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.15",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node indexServer.js",
+    "server": "nodemon indexServer.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
